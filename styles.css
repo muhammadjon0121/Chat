@@ -1,0 +1,208 @@
+html{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;  
+}
+*, *::before, *:after{
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+
+}
+
+
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to bottom, #cfdde8, #748fa5);
+    background-repeat: no-repeat;
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+}
+
+
+
+
+.wrapper {
+    width: 400px;
+    margin: 100px auto 0;
+    background: #fff;
+}
+
+.chat-title {
+    position: relative;
+    background-color: #6a96d8;
+    color: #fff;
+    padding: 20px;
+}
+
+.chat-title-text {
+    position: relative;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.chat-title-text::before {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    left: 0;
+    top: 50%;
+    margin-top: -4px;
+    background-color: #fff;
+    border-radius: 50%;
+
+
+}
+
+.chat-close-link {
+    position: absolute;
+    opacity: .7;
+    right: 15px;
+    top: 50%;
+    margin-top: -12px;
+    transition: all .3s ease;
+}
+
+.chat-close-link:hover {
+    opacity: 5;
+}
+
+.close-link-img {
+    vertical-align: middle;
+}
+
+.chat {
+    padding: 20px;
+}
+
+.chat hr {
+    border-top: 1px solid #ddd;
+}
+
+.date-devider-text {
+    position: absolute;
+    top: -622%;
+    left: 50%;
+    color: #e0e0e0;
+    padding: 5px 10px;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    transform: translateX(-50%);
+}
+
+.date-divider {
+   position: relative;
+   margin-bottom: 15px;
+}
+
+.massage-time {
+    font-style: 14px;
+    color: #acacac;
+
+}
+
+.massage-text {
+    position: relative;
+    display:inline-block;
+    padding: 10px;
+    font-weight: 500;
+    max-width: 270px;
+    width: auto;
+    border-radius: 3px;
+  
+
+
+}
+
+.massage-text:before {
+    position: absolute;
+    content: ''; 
+    width: 0;
+    height: 0;
+    display: block;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: 0;
+}
+
+.massege-sender .massage-text:before {
+    border-top: 5px solid #e6edf6;
+    left: -5px;
+}
+
+ .massege-sender .massage-text {
+     background-color: #e6edf6;
+     float:left ;
+
+}
+
+.massage-recipient .massage-text {
+    background-color:#f2f2f2;
+    float: right;
+}
+
+.massage-recipient .massage-text:before {
+    border-top: 5px solid #f2f2f2;
+    right: -5px;
+}
+
+.massage-alert-danger .massage-text {
+    background-color: #ffc2c1;
+    float: right ;
+
+}
+
+.massage-alert-danger .massage-text:before {
+    border-top: 5px solid #ffc2c1;
+    right: -5px;
+}
+
+.massage {
+    margin-bottom: 15px;
+}
+
+.clearfix::after, .clearfix::before{
+    content: '';
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.massage-recipient .massage-time {
+    text-align: right;
+}
+
+.chat hr {
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+.chat-compose-input {
+    border: none;
+    outline: 0px;
+    width: 80%;
+}
+
+.chat-compose-button {
+    border: none;
+    background-color:transparent;
+    color: #6a96d8;
+    text-transform: uppercase;
+    left: 1px;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-size: 15px;
+    letter-spacing: 1px;
+    width: 20%;
+    text-align: right;
+
+}
